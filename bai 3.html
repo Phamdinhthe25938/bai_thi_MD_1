@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function  isFibonacci(){
+        let check = false
+        let x3
+        let x1 = 0
+        let x2 = 1
+        let x = prompt('nhap vao 1 so:')
+        for (let i = 0; i <=x ; i++) {
+            x3 = x1 + x2
+            x1 = x2
+            x2 = x3
+            if (x === x3) {
+                check = true
+                break;
+            }
+        }
+        if(check){
+            alert(x+"la so fibonacci")
+        }
+        else {
+            alert(x+"ko la so fibonacci")
+        }
+    }
+    isFibonacci()
+
+</script>

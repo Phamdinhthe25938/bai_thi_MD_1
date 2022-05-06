@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function findMax(maxPointArray){
+        let max = maxPointArray[0]
+        for(let i =0;i<maxPointArray.length;i++){
+            if(maxPointArray[i]>max){
+                max=maxPointArray[i];
+            }
+        }
+        console.log('Diem cao nhat :'+max);
+    }
+    function input(){
+        let pointArray = [4,8,9,3,7,8,6,10]
+        findMax(pointArray)
+    }
+    input();
+</script>

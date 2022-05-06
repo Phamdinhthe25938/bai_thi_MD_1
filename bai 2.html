@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    function tryRemoveFromArray(){
+        let array = [1,6,2,3,8,5,19,1,7,10,12]
+        let x= parseInt(prompt('nhap vao 1 so nguyen x:'));
+        if(check(array,x)){
+            console.log('Mang sau khi xoa la:'+array)
+        }
+        else{
+            console.log('Mang khi k tim thay x la:'+array)
+        }
+    }
+    function check(newArray,a){
+        for (let i =0;i<newArray.length;i++){
+            if(newArray[i]===a){
+                newArray.splice(i,1)
+            }
+        }
+        return true;
+    }
+    tryRemoveFromArray();
+</script>
